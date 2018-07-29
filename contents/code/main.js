@@ -1,6 +1,8 @@
-
 // based on this work:
 // https://www.reddit.com/r/kde/comments/7h6g8e/move_window_to_center_patch/
+
+// checkout KWin scipting tutorial for details:
+// https://techbase.kde.org/Development/Tutorials/KWin/Scripting
 
 function growCurrentWindow() {
   var win = workspace.activeClient;
@@ -37,5 +39,5 @@ function setCurrentWindowSize() {
 }
 
 registerShortcut("Make current window size 1/2 of screen", "Set the current window size to 1/2 of screen and center it", "Meta+M", setCurrentWindowSize);
-registerShortcut("Grow current window horizontally", "Make current window size 20 px wider", "Meta+.", growCurrentWindow);
-registerShortcut("Shrink current window horizontally", "Make current window 20 px narrower", "Meta+,", shrinkCurrentWindow);
+registerShortcut("Grow current window horizontally", "Make current window size 40 px wider", "Meta+.", growCurrentWindow);
+registerShortcut("Shrink current window horizontally", "Make current window 40 px narrower", "Meta+,", shrinkCurrentWindow);
